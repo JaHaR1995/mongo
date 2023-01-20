@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 
 app.use(express.json());
-app.use(require("./routes.js/students.routes"));
+app.use(require("./routes/students.route"));
 
 mongoose
   .connect(

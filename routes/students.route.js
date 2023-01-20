@@ -5,7 +5,7 @@ const router = Router();
 
 router.get("/students", studentsController.getStudents);
 router.post("/students", studentsController.addStudent);
-router.delete("/students/id:",studentsController.deleteStudent);
-router.patch("/students/id:",studentsController.patchStudent);
+router.delete("/students/:id", studentsController.deleteStudent);
+router.patch("/students/:id", studentsController.patchStudent);
 
-module.exports = router 
+module.exports = router;
